@@ -1,51 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Interactive card details form</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
 </head>
+
 <body>
+  <main class="container">
+    <div class="leftContainer">
+      <div class="left">
+      </div>
+      <div class="frontCard">
+        <div>
+          <img src="./images/card-logo.svg" alt="">
+        </div>
+        <div class="cardNumber">
+          0000 0000 0000 0000
+        </div>
+        <div class="cardBottom"> 
+          <p class="cardBottomName">Jane Applessed</p>
+          <p class="cardBottomdate"> 00/00</p>
+        </div>
+      </div>
+      <div class="backCard">
+        <p class="backCardText">000</p>
+      </div>
+    </div>
+    <div class="form">
+      <div>
+        <div class="inputLabel">cardholder name</div>
+        <input type="text" class="name input" placeholder="e.g. Jane Applessed">
+        <p class="errorText">The name must be at least two words</p>
+      </div>
+      <div>
+        <div class="inputLabel">card number</div>
+        <input type="text" class="number input " placeholder="e.g. 1234 5678 9123 0000">
+        <p class="errorText">Wrong fomrat numbers only</p>
+      </div>
+      <div class="dateContainer">
+        <div class="date">
+          <div class="inputLabel">exp.date(MM/yy)</div>
+          <div class="dateInputs">
+            <input type="number" placeholder="MM">
+            <input type="number" placeholder="YY">
+          </div>
+          <p class="errorText">Can't be blank</p>
 
-  0000 0000 0000 0000
-  Jane Appleseed
-  00/00
+        </div>
+        <div class="cvc">
+          <div class="inputLabel" >cvc</div>
+          <input type="text" placeholder="e.g. 123">
+          <p class="errorText">Can't be blank</p>
+        </div>
+      </div>
+      <button class="confirm">Confirm</button>
+    </div>
+    <div class="thanksContainer">
+      <img src="./images/icon-complete.svg" alt="">
+      <h1 class="thankYou">Thank you!</h1>
+      <p>We've added your card details</p>
+      <button>Continue</button>
+    </div>
+  </main>
 
-  000
-
-  Cardholder Name
-  e.g. Jane Appleseed
-
-  Card Number
-  e.g. 1234 5678 9123 0000
-
-  Exp. Date (MM/YY)
-  MM
-  YY
-
-  CVC
-  e.g. 123
-
-  Confirm
-
-  <!-- Completed state start -->
-
+  <!-- 0000 0000 0000 0000
+ 
+  
   Thank you!
   We've added your card details
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  Continue -->
+
+  <script src="main.js"></script>
 </body>
+
 </html>
