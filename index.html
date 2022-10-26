@@ -21,14 +21,17 @@
       </div>
       <div class="frontCard">
         <div>
-          <img src="./images/card-logo.svg" alt="">
+          <img class="logo" src="./images/card-logo.svg" alt="">
         </div>
         <div class="cardNumber">
           0000 0000 0000 0000
         </div>
-        <div class="cardBottom"> 
+        <div class="cardBottom">
           <p class="cardBottomName">Jane Applessed</p>
-          <p class="cardBottomdate"> 00/00</p>
+          <div>
+          <span class="monthvalue">00</span>/
+          <span class="yearvalue">00</span>
+        </div>
         </div>
       </div>
       <div class="backCard">
@@ -43,22 +46,22 @@
       </div>
       <div>
         <div class="inputLabel">card number</div>
-        <input type="text" class="number input " placeholder="e.g. 1234 5678 9123 0000">
+        <input type="text" maxlength="16" class="number input " placeholder="e.g. 1234 5678 9123 0000">
         <p class="errorText">Wrong fomrat numbers only</p>
       </div>
       <div class="dateContainer">
         <div class="date">
           <div class="inputLabel">exp.date(MM/yy)</div>
           <div class="dateInputs">
-            <input type="number" placeholder="MM">
-            <input type="number" placeholder="YY">
+            <input type="number" placeholder="MM" class="month ">
+            <input type="number" placeholder="YY" class="year ">
           </div>
           <p class="errorText">Can't be blank</p>
 
         </div>
         <div class="cvc">
-          <div class="inputLabel" >cvc</div>
-          <input type="text" placeholder="e.g. 123">
+          <div class="inputLabel">cvc</div>
+          <input type="number" maxlength="3" placeholder="e.g. 123" class="cvcInput ">
           <p class="errorText">Can't be blank</p>
         </div>
       </div>
@@ -72,12 +75,6 @@
     </div>
   </main>
 
-  <!-- 0000 0000 0000 0000
- 
-  
-  Thank you!
-  We've added your card details
-  Continue -->
 
   <script src="main.js"></script>
 </body>
